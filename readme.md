@@ -33,10 +33,13 @@ Polega on na wykorzystaniu trzech tablic:
 
 1. Tablicy danych wejściowych
 2. Tablicy danych wyjściowych (zawierająca posortowane dane z tablicy 1)
-3. Tablicy zliczającej, która zawiera ilość poszczególnych wartości z tablicy 1. Wartość elementu z tablicy 1 stanowi indeks elementu tablicy 3, a jego wartość określa ilość (powtarzalność).  
-   Jest to ekstremalnie wydajny algorytm, jednakże posiada on dwa istotne wady:
+3. Tablicy zliczającej, która zawiera ilość poszczególnych wartości z tablicy 1. Wartość elementu z tablicy 1 stanowi indeks elementu tablicy 3, a jego wartość określa ilość (powtarzalność).
+
+Jest to ekstremalnie wydajny algorytm, jednakże posiada on dwa istotne wady:
 
 - trzeba znać zakres danych tablicy (albo wyszukać je przy pomocy innych algorytmów),
 - algorytm nie radzi sobie z zakresem znacznie przewyższającym ilość danych (np. dla zakresu 0 - 4 294 967 295, czyli 0xFFFFFFFF algorytm nie zakończył działania dla 300k wpisów).
-  Z tego ostatniego wynika, że algorytm doskonale spisywałby się do sortowania powtarzalnych liczb.
-  Dla powyższych danych (zakres 0 - 65535, 300k wpisów) sortowanie przez zliczanie okazał się być najbardziej wydajnym algorytmem ze wszystkich użytych.
+
+Z tego ostatniego wynika, że algorytm doskonale spisywałby się do sortowania powtarzalnych liczb.
+
+Dla powyższych danych (zakres 0 - 65535, 300k wpisów) sortowanie przez zliczanie okazało się być najbardziej wydajnym algorytmem ze wszystkich przeze mnie użytych.
